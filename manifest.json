@@ -1,0 +1,33 @@
+{
+  "name": "Anti Reel",
+  "description": "Hide Shorts / Reels from homepage and search results.",
+  "permissions": ["scripting", "tabs"],
+  "host_permissions": [
+    "*://www.youtube.com/*",
+    "*://www.facebook.com/*",
+    "*://www.instagram.com/*"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://www.youtube.com/*"],
+      "js": ["./scripts/youtube.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://www.facebook.com/*"],
+      "js": ["./scripts/facebook.js"],
+      "run_at": "document_start"
+    },
+    {
+      "matches": ["*://www.instagram.com/*"],
+      "js": ["./scripts/instagram.js"],
+      "run_at": "document_start"
+    }
+  ],
+  "version": "1.0",
+  "manifest_version": 3,
+  "action": {
+    "default_popup": "./popup/popup.html",
+    "default_icon": "./images/anti-reels.png"
+  }
+}
