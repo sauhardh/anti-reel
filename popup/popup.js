@@ -39,9 +39,9 @@ async function updateOptions(key, value) {
   await chrome.storage.sync.set({ options });
 
   // Reload the active tab
-  // chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
-  //   chrome.tabs.reload(tabs[0].id);
-  // });
+  chrome.tabs.query({ active: true, currentWindow: true }, (tabs) => {
+    chrome.tabs.reload(tabs[0].id);
+  });
 }
 
 init();
