@@ -10,24 +10,24 @@
   "content_scripts": [
     {
       "matches": ["*://www.youtube.com/*"],
-      "js": ["./scripts/youtube.js"],
+      "js": ["/scripts/youtube.js"],
       "run_at": "document_idle"
     },
     {
       "matches": ["*://www.facebook.com/*"],
-      "js": ["./scripts/facebook.js"],
+      "js": ["/scripts/facebook.js"],
       "run_at": "document_idle"
     },
     {
       "matches": ["*://www.instagram.com/*"],
-      "js": ["./scripts/instagram.js"],
+      "js": ["/scripts/instagram.js"],
       "run_at": "document_idle"
     }
   ],
   "version": "1.0",
   "manifest_version": 3,
   "action": {
-    "default_popup": "./popup/popup.html",
-    "default_icon": "./images/anti-reels.png"
+    "default_popup": "/popup/popup.html",
+    "default_icon": "/images/anti-reels.png"
   }
 }
