@@ -36,6 +36,4 @@
 - For best results, reload pages after toggling options.
   > NOTE: Tested only on Chromium based browser.
 
-Copyright (c) 2025 Sauhardha Kafle. All Rights Reserved.
-<br>
 [BuyMeMomo](https://buymemomo.com/sauhardha)
