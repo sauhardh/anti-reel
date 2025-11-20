@@ -23,6 +23,7 @@ function hideShorts() {
     "ytd-rich-shelf-renderer[is-shorts]",
     'a[href*="/shorts/"]',
     'a[title="Shorts"]',
+    "ytd-reel-shelf-renderer",
   ];
   selectors.forEach((selector) => displayNone(selector));
   hideChip();
